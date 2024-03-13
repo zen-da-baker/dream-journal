@@ -22,11 +22,10 @@ function App() {
 
   // Log In Authorization demo
   const password = 'enter';
-  const [authorized, setAuthorized] = useState(false);
 
   function handleSubmit(event) {
     const enterPassword = event.target.querySelector('input[type="password"]').value;
-    const auth = enterPassword == password;
+    const auth = enterPassword === password;
     setUserProfilePage(auth);
   }
 
@@ -39,24 +38,93 @@ function App() {
   } else if (userProfilePage === true) {
     return (
       <>
-        <Header />
+        <Header  
+          handleUserProfile={() => {
+            setUserProfilePage(true);
+          }}
+
+          handleDiscover={() => {
+            setUserProfilePage(false);
+            setDiscoverPage(true);
+          }}
+
+          handleFriends={() => {
+            setUserProfilePage(false);
+            setFriendsListPage(true);
+          }}
+
+          handleSignOut={() => {
+            setSignUpPage(false);
+            setUserProfilePage(false);
+            setDiscoverPage(false);
+            setFriendsListPage(false);
+          }}
+        />
+
         <UserProfile />
+
         <Footer />
       </>
     )
   } else if (discoverPage === true) {
     return (
       <>
-        <Header />
+        <Header 
+          handleUserProfile={() => {
+            setUserProfilePage(true);
+            setDiscoverPage(false);
+          }}
+
+          handleDiscover={() => {
+            setDiscoverPage(true);
+          }}
+
+          handleFriends={() => {
+            setDiscoverPage(false);
+            setFriendsListPage(true);
+          }}
+
+          handleSignOut={() => {
+            setSignUpPage(false);
+            setUserProfilePage(false);
+            setDiscoverPage(false);
+            setFriendsListPage(false);
+          }}
+        />
+
         <Discover />
+
         <Footer />
       </>
     )
   } else if (friendsListPage === true) {
     return (
       <>
-        <Header />
+        <Header 
+          handleUserPorfile={() => {
+            setUserProfilePage(true);
+            setFriendsListPage(false);
+          }}
+
+          handleDiscover={() => {
+            setDiscoverPage(true);
+            setFriendsListPage(false);
+          }}
+
+          handleFriends={() => {
+            setFriendsListPage(true);
+          }}
+
+          handleSignOut={() => {
+            setSignUpPage(false);
+            setUserProfilePage(false);
+            setDiscoverPage(false);
+            setFriendsListPage(false);
+          }}
+        />
+
         <Friends />
+
         <Footer />
       </>
     )
