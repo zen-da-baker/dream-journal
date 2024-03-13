@@ -1,5 +1,16 @@
-// React
+// Import React
 import React, { useState } from 'react';
+
+// Import Page Component
+import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
+import UserProfile from './components/UserProfile';
+import Discover from './components/Discover';
+import Friends from './components/Friends';
+
+// Import Header and Footer
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
 
