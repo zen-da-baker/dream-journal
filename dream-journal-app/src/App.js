@@ -101,7 +101,7 @@ function App() {
     return (
       <>
         <Header 
-          handleUserPorfile={() => {
+          handleUserProfile={() => {
             setUserProfilePage(true);
             setFriendsListPage(false);
           }}
