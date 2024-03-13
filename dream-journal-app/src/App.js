@@ -20,6 +20,16 @@ function App() {
   const [discoverPage, setDiscoverPage] = useState(false);
   const [friendsListPage, setFriendsListPage] = useState(false);
 
+  // Log In Authorization demo
+  const password = 'enter';
+  const [authorized, setAuthorized] = useState(false);
+
+  function handleSubmit(event) {
+    const enterPassword = event.target.querySelector('input[type="password"]').value;
+    const auth = enterPassword == password;
+    setUserProfilePage(auth);
+  }
+
   if (signUpPage === true) {
     return (
       <>
@@ -53,7 +63,7 @@ function App() {
   } else {
     return (
       <>
-        <SignIn />
+        <SignIn handleSubmit={handleSubmit} />
       </>
     )
   }
