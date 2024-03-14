@@ -5,14 +5,46 @@
     margin: 0;
 }
 
+html {
+    font-size: 16px;
+}
+
 /* Typography
 ============================================ */
 
-/* Page
+/* Structure
 ============================================ */
+
+/* Flexbox */
+.container {
+    display: flex;
+}
 
 /* Vanilla Components
 ============================================ */
+
+/* Buttons */
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem black;
+}
+.btn:hover {
+    opacity: 0.75;
+}
+
+.btnDanger {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem hsla(10, 90%, 10%, 1);
+
+    color: white;
+    background-color: hsla(5, 80%, 40%, 1);
+}
 
 /* React Components
 ============================================ */

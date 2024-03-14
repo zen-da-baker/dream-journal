@@ -9,10 +9,10 @@ export default function Header(props) {
         <header>
             <h3>Header</h3>
 
-            <button onClick={props.handleUserProfile}>User Profile</button>
-            <button onClick={props.handleDiscover}>Discover</button>
-            <button onClick={props.handleFriends}>Friends</button>
-            <button onClick={props.handleSignOut}>Sign Out</button>
+            <button className={style.btn} onClick={props.handleUserProfile}>User Profile</button>
+            <button className={style.btn} onClick={props.handleDiscover}>Discover</button>
+            <button className={style.btn} onClick={props.handleFriends}>Friends</button>
+            <button className={style.btnDanger} onClick={props.handleSignOut}>Sign Out</button>
         </header>
     )
 }
