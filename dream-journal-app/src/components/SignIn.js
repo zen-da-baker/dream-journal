@@ -1,16 +1,24 @@
+// Import React
 import React from 'react';
+
+// Import Styles
+import style from '../styles/styles.module.css';
 
 export default function SignIn(props) {
     return (
-        <div>
-            <h1>Sign In</h1>
+        <div className={style.container}>
+            <section>
 
-            <form action='#' onSubmit={props.handleSubmit}>
-                <input type='password' placeholder='Password' />
-                <input type='submit' />
-            </form>
+            
+                <h1>Sign In</h1>
 
-            <p>If you don't have an account, sign up here.</p>
+                <form action='#' onSubmit={props.handleSubmit}>
+                    <input className={style.textField} type='password' placeholder='Password' />
+                    <input className={style.btn} type='submit' />
+                </form>
+
+                <p>If you don't have an account, sign up here.</p>
+            </section>
         </div>
         
     )

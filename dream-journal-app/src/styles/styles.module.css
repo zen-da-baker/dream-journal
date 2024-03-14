@@ -21,6 +21,13 @@ html {
     justify-content: center;
 }
 
+section {
+    border-radius: 1rem;
+    border: 0.25rem solid black;
+    padding: 1rem;
+    background-color: hsla(20, 35%, 85%, 1);
+}
+
 /* Vanilla Components
 ============================================ */
 
@@ -47,6 +54,14 @@ html {
 
     color: white;
     background-color: hsla(5, 80%, 40%, 1);
+}
+
+/* Text Fields */
+.textField {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    box-shadow: 0.5rem 0.5rem black;
 }
 
 /* React Components
