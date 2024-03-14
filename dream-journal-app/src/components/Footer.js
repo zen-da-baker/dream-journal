@@ -7,7 +7,10 @@ import style from '../styles/styles.module.css';
 export default function Footer() {
     return (
         <footer>
-            <h3>Footer</h3>
+            <div className={style.container}>
+                <h3>Footer</h3> 
+            </div>
+            
         </footer>
     )
 }

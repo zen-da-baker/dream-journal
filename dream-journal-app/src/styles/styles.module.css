@@ -18,6 +18,7 @@ html {
 /* Flexbox */
 .container {
     display: flex;
+    justify-content: center;
 }
 
 /* Vanilla Components
@@ -30,6 +31,7 @@ html {
     margin: 1rem;
     cursor: pointer;
     box-shadow: 0.5rem 0.5rem black;
+    border: none;
 }
 .btn:hover {
     opacity: 0.75;
@@ -41,6 +43,7 @@ html {
     margin: 1rem;
     cursor: pointer;
     box-shadow: 0.5rem 0.5rem hsla(10, 90%, 10%, 1);
+    border: none;
 
     color: white;
     background-color: hsla(5, 80%, 40%, 1);
