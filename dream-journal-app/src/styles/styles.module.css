@@ -7,10 +7,35 @@
 
 html {
     font-size: 16px;
+    background-color: hsla(180, 35%, 30%, 1);
 }
 
 /* Typography
 ============================================ */
+
+/* Global Font Family */
+h1, h2, h3, li, p, input {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Font Colors */
+h1, h2, h3 {
+    color: hsla(150, 50%, 90%, 1);
+}
+
+li, p {
+    color: hsla(150, 20%, 90%, 1);
+}
+
+/* Achor */
+a {
+    color: hsla(100, 90%, 80%, 1);
+    text-decoration: none;
+}
+a:hover {
+    background-color: hsla(100, 50%, 60%, 0.25);
+    text-decoration: underline;
+}
 
 /* Structure
 ============================================ */
@@ -19,17 +44,37 @@ html {
 .container {
     display: flex;
     justify-content: center;
+    margin: 1rem;
 }
 
 .grid {
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 0.25rem;
+    height: 100vh;
+}
+@media only screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .signInFormSection {
     border-radius: 1rem;
     border: 0.25rem solid black;
-    padding: 1rem;
-    background-color: hsla(20, 35%, 85%, 1);
+    padding: 3rem;
+    background-color: hsla(150, 50%, 20%, 1);
+
+    grid-column: 4 / span 6;
+    grid-row: 2 / span 6;
+    overflow: scroll;
+}
+@media only screen and (max-width: 480px) {
+    .signInFormSection {
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 6;
+    }
 }
 
 /* Vanilla Components
@@ -41,11 +86,37 @@ html {
     padding: 0.5rem;
     margin: 1rem;
     cursor: pointer;
-    box-shadow: 0.5rem 0.5rem black;
     border: none;
+
+    color: hsla(180, 50%, 10%, 1);
+    background-color: hsla(180, 50%, 70%, 1);
+    box-shadow: 0.25rem 0.25rem hsla(180, 50%, 90%, 1);
 }
 .btn:hover {
-    opacity: 0.75;
+    background-color: hsla(180, 50%, 75%, 1);
+}
+.btn:active {
+    background-color: hsla(180, 50%, 80%, 1);
+    box-shadow: 0.125rem 0.125rem hsla(180, 50%, 90%, 1);
+}
+
+.btnPrimary {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    border: 0.125rem solid hsla(150, 50%, 90%, 1);
+
+    color: hsla(150, 50%, 10%, 1);
+    background-color: hsla(150, 50%, 70%, 1);
+    box-shadow: 0.25rem 0.25rem hsla(150, 50%, 90%, 1);
+}
+.btnPrimary:hover {
+    background-color: hsla(150, 50%, 75%, 1);
+}
+.btnPrimary:active {
+    background-color: hsla(150, 50%, 80%, 1);
+    box-shadow: 0.125rem 0.125rem hsla(150, 50%, 90%, 1);
 }
 
 .btnDanger {
@@ -53,11 +124,18 @@ html {
     padding: 0.5rem;
     margin: 1rem;
     cursor: pointer;
-    box-shadow: 0.5rem 0.5rem hsla(10, 90%, 10%, 1);
     border: none;
 
-    color: white;
-    background-color: hsla(5, 80%, 40%, 1);
+    color: hsla(5, 50%, 10%, 1);
+    background-color: hsla(5, 50%, 70%, 1);
+    box-shadow: 0.25rem 0.25rem hsla(5, 50%, 90%, 1);
+}
+.btnDanger:hover {
+    background-color: hsla(5, 50%, 75%, 1);
+}
+.btnDanger:active {
+    background-color: hsla(5, 50%, 80%, 1);
+    box-shadow: 0.125rem 0.125rem hsla(5, 50%, 90%, 1);
 }
 
 /* Text Fields */
@@ -66,6 +144,7 @@ html {
     padding: 0.5rem;
     margin: 1rem;
     box-shadow: 0.5rem 0.5rem black;
+    width: 80%;
 }
 
 /* React Components
@@ -76,10 +155,15 @@ html {
 
 /* Header */
 header {
-    background-color: hsla(20, 35%, 85%, 1);
+    background-color: hsla(180, 35%, 20%, 1);
 }
 
 /* Footer */
 footer {
-    background-color: hsla(20, 35%, 85%, 1);
+    background-color: hsla(180, 35%, 20%, 1);
+}
+
+/* Body */
+main {
+    background-color: hsla(180, 35%, 30%, 1);
 }

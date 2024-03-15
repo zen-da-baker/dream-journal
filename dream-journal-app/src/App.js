@@ -131,7 +131,10 @@ function App() {
   } else {
     return (
       <>
-        <SignIn handleSubmit={handleSubmit} />
+        <SignIn handleSubmit={handleSubmit} 
+        handleSignUp={() => {
+          setSignUpPage(true);
+        }} />
       </>
     )
   }
