@@ -266,10 +266,47 @@ a:hover {
 
 /* React Components
 ============================================ */
+/* Friend Card component and its Grid */
 .friendCard {
     border: 0.125rem solid white;
     border-radius: 1rem;
     padding: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    gap: 1rem;
+}
+
+#friendBanner {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+
+    overflow: hidden;
+}
+#friendPfp {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+
+    overflow: hidden;
+}
+.pfp {
+    border: 0.125rem solid black;
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+#friendUsername {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+}
+#bioElement {
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 2;
 }
 
 /* Section Elements
