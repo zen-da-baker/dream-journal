@@ -16,6 +16,7 @@ html {
 /* Global Font Family */
 h1, h2, h3, li, p, input {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5rem;
 }
 
 /* Font Colors */
@@ -105,8 +106,6 @@ a:hover {
     grid-column: 1 / span 12;
     grid-row: 1 / span 5;
 
-    background: url(../images/placeholder.webp);
-
     padding: 1rem;
 
     overflow: none;
@@ -120,8 +119,6 @@ a:hover {
 #profilePicture {
     grid-column: 2 / span 2;
     grid-row: 1 / span 5;
-
-    background: url(../images/placeholder.webp);
 
     border: 0.125rem solid black;
 
