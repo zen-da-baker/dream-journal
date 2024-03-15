@@ -11,10 +11,21 @@ export default function ProfileBanner() {
                 <div className={style.profileGrid}>
                     <h2>Profile Component</h2>
 
-                    <p>Profile Picture</p>
-                    <p>Profile Banner</p>
-                    <p>Username</p>
-                    <p>Bio</p>
+                    <div id={style.profilePicture}>
+                        <p>Profile Picture</p>
+                    </div>
+
+                    <div id={style.profileBanner}>
+                        <p>Profile Banner</p>
+                    </div>
+
+                    <div id={style.username}>
+                        <p>Username</p>
+                    </div>
+
+                    <div id={style.bio}>
+                        <p>Bio</p>
+                    </div>
                 </div>
             </div>
         </div>
