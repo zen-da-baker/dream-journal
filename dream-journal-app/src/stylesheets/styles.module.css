@@ -38,14 +38,18 @@ a:hover {
     text-decoration: underline;
 }
 
+#siteHeading {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
 /* Structure
 ============================================ */
 
 /* Flexbox */
 .container {
     display: flex;
-    justify-content: center;
-    margin: 1rem;
+    justify-content: space-between;
 }
 
 .grid {
@@ -148,11 +152,15 @@ a:hover {
 
     padding: 1rem;
 
+    /*
+
     background-color: hsla(150, 20%, 15%, 1);
 
     border: 0.125rem solid hsla(150, 50%, 90%, 1);
 
     border-radius: 1rem;
+
+    */
 }
 
 /* Profile Page Parent Component Positions */
@@ -315,6 +323,7 @@ a:hover {
 /* Header */
 header {
     background-color: hsla(180, 35%, 20%, 1);
+    margin-bottom: 1rem;
 }
 
 /* Footer */
