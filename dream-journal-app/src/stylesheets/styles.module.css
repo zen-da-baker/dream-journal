@@ -47,6 +47,10 @@ a:hover {
     text-decoration: none;
 }
 
+.footerHeading {
+    text-align: center;
+}
+
 /* Structure
 ============================================ */
 
@@ -54,6 +58,13 @@ a:hover {
 .container {
     display: flex;
     justify-content: space-between;
+}
+
+.columnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid {
@@ -210,23 +221,35 @@ a:hover {
 #footerGrid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
 }
 
 #footerLeft {
     grid-column: 1 / span 4;
     grid-row: 1 / span 3;
+
+    padding: 1rem;
 }
 
 #footerCenter {
     grid-column: 5 / span 4;
     grid-row: 1 / span 3;
+
+    padding: 1rem;
 }
 
 #footerRight {
     grid-column: 9 / span 4;
     grid-row: 1 / span 3;
+
+    padding: 1rem;
+}
+
+.footerCard {
+    border-radius: 1rem;
+    background-color: hsla(180, 50%, 10%, 1);
+    margin: 1rem;
 }
 
 /* Vanilla Components
@@ -239,6 +262,12 @@ a:hover {
     margin: 1rem;
     cursor: pointer;
     border: none;
+
+    border: 0.125rem solid hsla(150, 50%, 90%, 1);
+
+
+    min-width: 5rem;
+    max-width: 10rem;
 
     color: hsla(180, 50%, 10%, 1);
     background-color: hsla(180, 50%, 70%, 1);
@@ -257,6 +286,7 @@ a:hover {
     padding: 0.5rem;
     margin: 1rem;
     cursor: pointer;
+
     border: 0.125rem solid hsla(150, 50%, 90%, 1);
 
     color: hsla(150, 50%, 10%, 1);
@@ -277,6 +307,8 @@ a:hover {
     margin: 1rem;
     cursor: pointer;
     border: none;
+
+    border: 0.125rem solid hsla(150, 50%, 90%, 1);
 
     color: hsla(5, 50%, 10%, 1);
     background-color: hsla(5, 50%, 70%, 1);
