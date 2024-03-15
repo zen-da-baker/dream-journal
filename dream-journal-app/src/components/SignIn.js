@@ -7,7 +7,7 @@ import style from '../styles/styles.module.css';
 export default function SignIn(props) {
     return (
         <main>
-            <div className={style.grid}>
+            <div className={style.pageGrid}>
                 <section className={style.signInFormSection}>
                     <div className={style.container}>
                         <h1>Sign In</h1>
