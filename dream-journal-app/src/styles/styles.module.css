@@ -21,7 +21,11 @@ html {
     justify-content: center;
 }
 
-section {
+.grid {
+    display: grid;
+}
+
+.signInFormSection {
     border-radius: 1rem;
     border: 0.25rem solid black;
     padding: 1rem;
