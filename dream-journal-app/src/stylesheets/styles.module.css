@@ -55,7 +55,7 @@ a:hover {
 .pageGrid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 1rem;
     min-height: 90vh;
 }

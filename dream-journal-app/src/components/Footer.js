@@ -8,8 +8,6 @@ export default function Footer() {
     return (
         <footer>
             <div className={style.container}>
-                <h3>Footer</h3> 
-
                 <ul>
                     <li>About Us</li>
                     <li>Careers</li>
