@@ -171,7 +171,27 @@ a:hover {
 }
 
 /* Friend List on Profile Page Grid */
+#friendListHeading {
+    grid-column: 2 / span 10;
+    grid-row: 1 / span 1;
+}
 
+#friend1 {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 8;
+}
+#friend2 {
+    grid-column: 4 / span 3;
+    grid-row: 2 / span 8;
+}
+#friend3 {
+    grid-column: 7 / span 3;
+    grid-row: 2 / span 8;
+}
+#friend4 {
+    grid-column: 10 / span 3;
+    grid-row: 2 / span 8;
+}
 
 /* Vanilla Components
 ============================================ */

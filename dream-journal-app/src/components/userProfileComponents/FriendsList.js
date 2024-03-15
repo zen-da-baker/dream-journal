@@ -17,24 +17,23 @@ export default function FriendsList() {
                     </div>
 
                     <FriendCard 
-                        id={style.friend1}
+                        friendCardId={style.friend1}
                         friendName='Friend 1'
                     />
 
                     <FriendCard
+                        friendCardId={style.friend2}
                         friendName='Friend 2'
                     />
 
                     <FriendCard 
+                        friendCardId={style.friend3}
                         friendName='Friend 3'
                     />
 
                     <FriendCard
+                        friendCardId={style.friend4}
                         friendName='Friend 4'
-                    />
-
-                    <FriendCard
-                        friendName='Friend 5'
                     />
 
                 </div>
