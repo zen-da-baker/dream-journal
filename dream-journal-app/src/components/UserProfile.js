@@ -4,6 +4,9 @@ import React from 'react';
 // Import Styles
 import style from '../stylesheets/styles.module.css';
 
+// Import Placeholder Image
+//import placeholder from './images/placeholder.webp';
+
 // Import Child Components
 import ProfileBanner from './userProfileComponents/ProfileBanner';
 import MonthDisplay from './userProfileComponents/MonthDisplay';
@@ -21,9 +24,9 @@ export default function UserProfile() {
                      their freinds. This is a super great way to do it because if you have a dream and want to share that dream with your 
                      friends, you can create a post about it on this app.'
 
-                    pfpSrc='../images/placeholder.webp'
+                    pfpSrc='./images/placeholder.webp'
 
-                    bannerSrc='../images/placeholder.webp'
+                    bannerSrc='./images/placeholder.webp'
                 />
 
                 <MonthDisplay />

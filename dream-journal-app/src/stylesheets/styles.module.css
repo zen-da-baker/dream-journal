@@ -110,6 +110,8 @@ a:hover {
 
     overflow: none;
 
+    background-color: hsla(5, 50%, 20%, 1);
+
     border-radius: 1rem;
 }
 #profileBanner img {
