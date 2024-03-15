@@ -55,8 +55,8 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    gap: 0.25rem;
-    min-height: 100vh;
+    gap: 1rem;
+    min-height: 90vh;
 }
 @media only screen and (max-width: 480px) {
     .grid {
@@ -83,13 +83,22 @@ a:hover {
 
 /* Card */
 .card {
-    border: 0.25rem solid black;
+    background-color: hsla(180, 50%, 20%, 1);
+    border-radius: 0.5rem;
+    padding: 1rem;
 }
 
 /* Profile Page Layout */
 #profileComponent {
     grid-column: 2 / span 10;
     grid-row: 1 / span 2;
+}
+
+.profileGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 #monthComponent {
@@ -105,6 +114,13 @@ a:hover {
 #friendsListComponent {
     grid-column: 2 / span 10;
     grid-row: 7 / span 2;
+}
+
+.friendsGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 /* Vanilla Components

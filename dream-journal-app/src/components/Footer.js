@@ -9,6 +9,13 @@ export default function Footer() {
         <footer>
             <div className={style.container}>
                 <h3>Footer</h3> 
+
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>FAQ</li>
+                    <li>Mission Statement</li>
+                </ul>
             </div>
             
         </footer>

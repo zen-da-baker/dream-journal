@@ -10,7 +10,14 @@ export default function UserProfile() {
             <div className={style.pageGrid}>
                 <div id={style.profileComponent} className={style.grid}>
                     <div className={style.card}>
-                        <h2>Profile Component</h2>
+                        <div className={style.profileGrid}>
+                            <h2>Profile Component</h2>
+
+                            <p>Profile Picture</p>
+                            <p>Profile Banner</p>
+                            <p>Username</p>
+                            <p>Bio</p>
+                        </div>
                     </div>
                 </div>
 
@@ -28,7 +35,14 @@ export default function UserProfile() {
 
                 <div id={style.friendsListComponent} className={style.grid}>
                     <div className={style.card}>
-                        <h2>Friends List Component</h2>
+                        <div className={style.friendsGrid}>
+                            <h2>Friends List Component</h2>
+
+                            <p>Friend 1 Card</p>
+                            <p>Friend 2 Card</p>
+                            <p>Friend 3 Card</p>
+                            <p>Friend 4 Card</p>
+                        </div>
                     </div>
                 </div>
             </div>
