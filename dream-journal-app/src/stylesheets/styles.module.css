@@ -106,9 +106,9 @@ a:hover {
     grid-column: 1 / span 12;
     grid-row: 1 / span 5;
 
-    padding: 1rem;
+    padding: 0;
 
-    overflow: none;
+    overflow: hidden;
 
     background-color: hsla(5, 50%, 20%, 1);
 
@@ -122,9 +122,11 @@ a:hover {
     grid-column: 2 / span 2;
     grid-row: 1 / span 5;
 
+    padding: 0;
+
     border: 0.125rem solid black;
 
-    overflow: none;
+    overflow: hidden;
 
     background-color: red;
     border-radius: 50%;
@@ -132,7 +134,8 @@ a:hover {
     z-index: 1;
 }
 #profilePicture img {
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #username {
@@ -167,12 +170,8 @@ a:hover {
     grid-row: 7 / span 2;
 }
 
-.friendsGrid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-}
+/* Friend List on Profile Page Grid */
+
 
 /* Vanilla Components
 ============================================ */
@@ -246,6 +245,11 @@ a:hover {
 
 /* React Components
 ============================================ */
+.friendCard {
+    border: 0.125rem solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
 
 /* Section Elements
 ============================================ */
