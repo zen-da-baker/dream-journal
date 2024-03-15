@@ -7,10 +7,8 @@ import style from '../../stylesheets/styles.module.css';
 export default function ProfileBanner() {
     return (
         <div id={style.profileComponent} className={style.grid}>
-            <div className={style.card}>
+            <div className={style.componentCard}>
                 <div className={style.profileGrid}>
-                    <h2>Profile Component</h2>
-
                     <div id={style.profilePicture}>
                         <p>Profile Picture</p>
                     </div>
@@ -24,7 +22,9 @@ export default function ProfileBanner() {
                     </div>
 
                     <div id={style.bio}>
-                        <p>Bio</p>
+                        <p>
+                            This is some text in a paragraph about a user of the dream journal app and is their home for sharing their dreams with their freinds.
+                        </p>
                     </div>
                 </div>
             </div>

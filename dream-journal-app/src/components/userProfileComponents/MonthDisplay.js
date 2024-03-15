@@ -7,7 +7,7 @@ import style from '../../stylesheets/styles.module.css';
 export default function MonthDisplay() {
     return (
         <div id={style.monthComponent} className={style.grid}>
-            <div className={style.card}>
+            <div className={style.componentCard}>
                 <h2>Month Component</h2>
             </div>
         </div>

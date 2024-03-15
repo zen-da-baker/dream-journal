@@ -7,7 +7,7 @@ import style from '../../stylesheets/styles.module.css';
 export default function DreamPost() {
     return (
         <div id={style.postComponent} className={style.grid}>
-            <div className={style.card}>
+            <div className={style.componentCard}>
                 <h2>Post Component</h2>
             </div>
         </div>

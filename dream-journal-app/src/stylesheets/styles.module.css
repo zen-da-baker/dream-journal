@@ -82,7 +82,7 @@ a:hover {
 }
 
 /* Card */
-.card {
+.componentCard {
     background-color: hsla(180, 50%, 20%, 1);
     border-radius: 0.5rem;
     padding: 1rem;
@@ -96,9 +96,61 @@ a:hover {
 
 .profileGrid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     gap: 1rem;
+    max-height: 50vh;
+}
+#profileBanner {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 5;
+
+    background: url(../images/placeholder.webp);
+
+    padding: 1rem;
+
+    overflow: none;
+
+    border-radius: 1rem;
+}
+#profileBanner img {
+    width: 100%;
+}
+
+#profilePicture {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 5;
+
+    background: url(../images/placeholder.webp);
+
+    border: 0.125rem solid black;
+
+    overflow: none;
+
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.5rem;
+    z-index: 1;
+}
+#profilePicture img {
+    width: 100%;
+}
+
+#username {
+    grid-column: 2 / span 3;
+    grid-row: 6 / span 1;
+}
+#bio {
+    grid-column: 5 / span 8;
+    grid-row: 6 / span 5;
+
+    padding: 1rem;
+
+    background-color: hsla(150, 20%, 15%, 1);
+
+    border: 0.125rem solid hsla(150, 50%, 90%, 1);
+
+    border-radius: 1rem;
 }
 
 #monthComponent {

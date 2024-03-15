@@ -7,7 +7,7 @@ import style from '../../stylesheets/styles.module.css';
 export default function FriendsList() {
     return (
         <div id={style.friendsListComponent} className={style.grid}>
-            <div className={style.card}>
+            <div className={style.componentCard}>
                 <div className={style.friendsGrid}>
                     <h2>Friends List Component</h2>
 
