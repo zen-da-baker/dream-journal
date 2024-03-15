@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import Styles
-import style from '../styles/styles.module.css';
+import style from '../stylesheets/styles.module.css';
 
 export default function SignIn(props) {
     return (
