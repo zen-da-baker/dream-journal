@@ -43,6 +43,10 @@ a:hover {
     margin-left: 1rem;
 }
 
+.footerLinks li {
+    text-decoration: none;
+}
+
 /* Structure
 ============================================ */
 
@@ -202,6 +206,29 @@ a:hover {
     grid-row: 2 / span 8;
 }
 
+/* Footer Grid */
+#footerGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+#footerLeft {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 3;
+}
+
+#footerCenter {
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 3;
+}
+
+#footerRight {
+    grid-column: 9 / span 4;
+    grid-row: 1 / span 3;
+}
+
 /* Vanilla Components
 ============================================ */
 
@@ -329,6 +356,7 @@ header {
 /* Footer */
 footer {
     background-color: hsla(180, 35%, 20%, 1);
+    margin-top: 1rem;
 }
 
 /* Body */
