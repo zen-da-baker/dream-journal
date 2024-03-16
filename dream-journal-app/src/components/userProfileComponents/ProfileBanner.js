@@ -9,11 +9,11 @@ export default function ProfileBanner(props) {
         <div id={style.profileComponent} className={style.grid}>
             <div className={style.componentCard}>
                 <div className={style.profileGrid}>
-                    <div id={style.profilePicture}>
-                        <img src={props.pfpSrc} alt='Profile icon' />
+                    <div id={style.profilePicture} className={style.imgContainer}>
+                        <img id={style.pfpContainer} src={props.pfpSrc} alt='Profile icon' />
                     </div>
 
-                    <div id={style.profileBanner}>
+                    <div id={style.profileBanner} className={style.imgContainer}>
                         <img src={props.bannerSrc} alt='Banner icon' />
                     </div>
 

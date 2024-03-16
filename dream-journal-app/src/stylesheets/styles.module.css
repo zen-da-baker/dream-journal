@@ -81,6 +81,12 @@ a:hover {
     justify-content: space-between;
 }
 
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .columnContainer {
     display: flex;
     flex-direction: column;
@@ -152,6 +158,7 @@ a:hover {
 
     background-color: hsla(5, 50%, 20%, 1);
 
+
     border-radius: 1rem;
 }
 #profileBanner img {
@@ -164,18 +171,16 @@ a:hover {
 
     padding: 0;
 
-    border: 0.125rem solid black;
-
     overflow: hidden;
 
+    border: 0.125rem solid hsla(150, 50%, 80%, 1);
+
     background-color: red;
-    border-radius: 50%;
-    padding: 0.5rem;
+    border-radius: 5rem;
     z-index: 1;
 }
 #profilePicture img {
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
 }
 
 #username {

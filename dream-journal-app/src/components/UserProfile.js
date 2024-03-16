@@ -29,9 +29,9 @@ export default function UserProfile() {
                      their freinds. This is a super great way to do it because if you have a dream and want to share that dream with your 
                      friends, you can create a post about it on this app.'
 
-                    pfpSrc='./images/placeholder.webp'
+                    pfpSrc='./images/Korra.png'
 
-                    bannerSrc='./images/placeholder.webp'
+                    bannerSrc='./images/Valorant.jpg'
                 />
 
                 <MonthDisplay />
