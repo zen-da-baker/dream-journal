@@ -18,7 +18,7 @@ h1, h2, h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-li, p, input {
+li, p, input, button, textarea {
     font-family:sans-serif;
     line-height: 1.5rem;
 }
@@ -28,7 +28,7 @@ h1, h2, h3 {
     color: hsla(150, 50%, 90%, 1);
 }
 
-li, p {
+li, p, button {
     color: hsla(150, 20%, 90%, 1);
 }
 
@@ -357,6 +357,11 @@ a:hover {
 .textField:hover {
     border: 0.125rem solid hsla(150, 50%, 80%, 1);
     background-color: hsla(180, 10%, 95%, 1);
+}
+
+#formPost {
+    text-align: start;
+    overflow: scroll;
 }
 
 /* React Components

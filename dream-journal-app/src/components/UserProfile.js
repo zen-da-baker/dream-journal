@@ -1,11 +1,8 @@
 // Import React
-import React from 'react';
+import React, { useState } from 'react';
 
 // Import Styles
 import style from '../stylesheets/styles.module.css';
-
-// Import Placeholder Image
-//import placeholder from './images/placeholder.webp';
 
 // Import Child Components
 import ProfileBanner from './userProfileComponents/ProfileBanner';
@@ -14,6 +11,14 @@ import DreamPost from './userProfileComponents/DreamPost';
 import FriendsList from './userProfileComponents/FriendsList';
 
 export default function UserProfile() {
+
+    const [selected, setSelected] = useState(false);
+
+    function handleSelection() {
+        setSelected(true);
+        return selected;
+    }
+
     return (
         <main>
             <div className={style.pageGrid}>
@@ -31,7 +36,9 @@ export default function UserProfile() {
 
                 <MonthDisplay />
 
-                <DreamPost />
+                <DreamPost 
+                    dateSelected={handleSelection}
+                />
 
                 <FriendsList />
             </div>
