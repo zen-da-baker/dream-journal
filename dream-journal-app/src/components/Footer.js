@@ -39,8 +39,10 @@ export default function Footer() {
                 <p>Join our newsletter to hear about the latest features coming to our app.</p>
 
                 <form>
-                    <input className={style.textField} type='text' placeholder='Your email address' />
-                    <input className={style.btnPrimary} type='submit' value='Submit' />
+                    <div className={style.container}>
+                        <input className={style.textField} type='text' placeholder='Your email address' />
+                        <input className={style.btnPrimary} type='submit' value='Submit' />
+                    </div>
                 </form>
             </div>
         </footer>
