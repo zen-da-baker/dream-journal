@@ -36,6 +36,8 @@ export default function Footer() {
             <div className={style.footerCard} id={style.footerRight}>
                 <h3 className={style.footerHeading}>Newsletter</h3>
 
+                <br />
+
                 <p>Join our newsletter to hear about the latest features coming to our app.</p>
 
                 <form>
