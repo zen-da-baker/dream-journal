@@ -42,7 +42,7 @@ export default function Footer() {
 
                 <form>
                     <div className={style.container}>
-                        <input className={style.textField} type='text' placeholder='Your email address' />
+                        <input className={style.textField} type='email' placeholder='Your email address' />
                         <input className={style.btnPrimary} type='submit' value='Submit' />
                     </div>
                 </form>
