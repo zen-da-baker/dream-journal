@@ -25,8 +25,6 @@ export default function DreamPost(props) {
                     <textarea type='text' className={style.textField} placeholder='Body text' id={style.formPost} rows='5' value={props.userInput} onChange={props.handleUserInput} ></textarea>
 
                     <input type='submit' className={style.btn} value='Submit' post={props.handlePost} />
-
-                    <p>{props.userInput}</p>
                 </div>
             </div>
         )

@@ -2,22 +2,32 @@
     "user1": {
       "username": "Zen da Baker",
       "bio": "This is the bio of Zen. This is some text in a paragraph about a user of the dream journal app and is their home for sharing their dreams with their freinds. This is a super great way to do it because if you have a dream and want to share that dream with your friends, you can create a post about it on this app.",
+      "pfp": "./images/Korra.png",
+      "banner": "./images/Valorant.jpg",
       "post": ""
     },
     "user2": {
         "username": "Emerald",
-        "bio": "This is Emerald's bio."
+        "bio": "This is Emerald's bio.",
+        "pfp": "./images/gendrome.png",
+        "banner": "./images/placeholder 1.png"
     },
     "user3": {
         "username": "Henry",
-        "bio": "This is the bio of Henry."
+        "bio": "This is the bio of Henry.",
+        "pfp": "./images/giadrome.png",
+        "banner": "./images/placeholder 2.png"
     },
     "user4": {
         "username": "Maria",
-        "bio": "This is the bio of Maria."
+        "bio": "This is the bio of Maria.",
+        "pfp": "./images/greatbaggi.png",
+        "banner": "./images/placeholder 3.png"
     },
     "user5": {
         "username": "Star",
-        "bio": "This is the bio of Star."
+        "bio": "This is the bio of Star.",
+        "pfp": "./images/greatizuchi.png",
+        "banner": "./images/placeholder 4.png"
     }
 }

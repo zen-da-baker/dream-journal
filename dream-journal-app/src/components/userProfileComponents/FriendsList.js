@@ -22,9 +22,9 @@ export default function FriendsList() {
                     <FriendCard 
                         friendCardId={style.friend1}
 
-                        pfpSrc='./images/Korra.png'
+                        pfpSrc={userData.user2.pfp}
 
-                        bannerSrc='./images/placeholder.webp'
+                        bannerSrc={userData.user2.banner}
                         
                         friendName={userData.user2.username}
 
@@ -34,9 +34,9 @@ export default function FriendsList() {
                     <FriendCard
                         friendCardId={style.friend2}
 
-                        pfpSrc='./images/Korra.png'
+                        pfpSrc={userData.user3.pfp}
 
-                        bannerSrc='./images/Valorant.jpg'
+                        bannerSrc={userData.user3.banner}
                         
                         friendName={userData.user3.username}
 
@@ -46,9 +46,9 @@ export default function FriendsList() {
                     <FriendCard 
                         friendCardId={style.friend3}
 
-                        pfpSrc='./images/Korra.png'
+                        pfpSrc={userData.user4.pfp}
 
-                        bannerSrc='./images/Valorant.jpg'
+                        bannerSrc={userData.user4.banner}
                         
                         friendName={userData.user4.username}
 
@@ -58,9 +58,9 @@ export default function FriendsList() {
                     <FriendCard
                         friendCardId={style.friend4}
 
-                        pfpSrc='./images/Korra.png'
+                        pfpSrc={userData.user5.pfp}
 
-                        bannerSrc='./images/Valorant.jpg'
+                        bannerSrc={userData.user5.banner}
                         
                         friendName={userData.user5.username}
 

@@ -40,9 +40,9 @@ export default function UserProfile() {
 
                     bio={userData.user1.bio}
 
-                    pfpSrc='./images/Korra.png'
+                    pfpSrc={userData.user1.pfp}
 
-                    bannerSrc='./images/Valorant.jpg'
+                    bannerSrc={userData.user1.banner}
                 />
 
                 <MonthDisplay 
