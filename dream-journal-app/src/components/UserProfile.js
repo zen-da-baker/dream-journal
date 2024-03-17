@@ -22,6 +22,16 @@ export default function UserProfile() {
         return selected;
     }
 
+    const [userInput, setUserInput] = useState('');
+
+    function handleUserInput(event) {
+        setUserInput(event.target.value);
+    }
+
+    function handlePost() {
+        return userData.user1.post.writeFile('../demoUserData/demoUserData.json', JSON.stringify(userInput));
+    }
+
     return (
         <main>
             <div className={style.pageGrid}>
@@ -35,10 +45,20 @@ export default function UserProfile() {
                     bannerSrc='./images/Valorant.jpg'
                 />
 
-                <MonthDisplay />
+                <MonthDisplay 
+                    postDisplay={handlePost}
+
+                    databaseInput={userData.user1.post}
+                />
 
                 <DreamPost 
                     dateSelected={handleSelection}
+
+                    postDisplay={handlePost}
+
+                    userInput={userInput}
+
+                    handleUserInput={handleUserInput}
                 />
 
                 <FriendsList />

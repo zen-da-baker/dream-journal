@@ -5,6 +5,7 @@ import React from 'react';
 import style from '../../stylesheets/styles.module.css';
 
 export default function DreamPost(props) {
+
     if (props.dateSelected === true) {
         return (
             <div id={style.postComponent} className={style.grid}>
@@ -21,9 +22,11 @@ export default function DreamPost(props) {
 
                     <input type='text' className={style.textField} placeholder='Title' />
 
-                    <textarea type='text' className={style.textField} placeholder='Body text' id={style.formPost} rows='5' ></textarea>
+                    <textarea type='text' className={style.textField} placeholder='Body text' id={style.formPost} rows='5' value={props.userInput} onChange={props.handleUserInput} ></textarea>
 
-                    <input type='submit' className={style.btn} value='Post' />
+                    <input type='submit' className={style.btn} value='Submit' post={props.handlePost} />
+
+                    <p>{props.userInput}</p>
                 </div>
             </div>
         )
