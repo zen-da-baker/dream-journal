@@ -24,6 +24,8 @@ export default function ProfileBanner(props) {
                     <div id={style.bio}>
                         <p>{props.bio}</p>
                     </div>
+
+                    <button id={style.addFriend} className={style.btn}>Add Friend</button>
                 </div>
             </div>
         </div>

@@ -7,14 +7,12 @@ import style from '../../stylesheets/styles.module.css';
 export default function FriendCard(props) {
     return (
         <div id={props.friendCardId} className={style.friendCard}>
-            <div id={style.friendBanner}>
+            <div id={style.friendBanner} className={style.imgContainer}>
                 <img src={props.bannerSrc} alt='Banner icon' />
             </div>
 
-            <div id={style.friendPfp}>
-                <div className={style.pfp}>
+            <div id={style.friendPfp} className={style.imgContainer}>
                     <img src={props.pfpSrc} alt='Profile icon' />
-                </div>
             </div>
 
             <div id={style.friendUsername}>
@@ -25,6 +23,9 @@ export default function FriendCard(props) {
                 <p>{props.bioText}</p>
             </div>
             
+            <div id={style.viewProfile}>
+                <button className={style.btn}>View Profile</button>
+            </div>
 
         </div>
     )
