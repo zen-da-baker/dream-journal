@@ -10,6 +10,9 @@ import MonthDisplay from './userProfileComponents/MonthDisplay';
 import DreamPost from './userProfileComponents/DreamPost';
 import FriendsList from './userProfileComponents/FriendsList';
 
+// Import Database
+import userData from '../demoUserData/demoUserData.json';
+
 export default function UserProfile() {
 
     const [selected, setSelected] = useState(false);
@@ -23,11 +26,9 @@ export default function UserProfile() {
         <main>
             <div className={style.pageGrid}>
                 <ProfileBanner 
-                    username='Firstname Lastname'
+                    username={userData.user1.username}
 
-                    bio='This is some text in a paragraph about a user of the dream journal app and is their home for sharing their dreams with
-                     their freinds. This is a super great way to do it because if you have a dream and want to share that dream with your 
-                     friends, you can create a post about it on this app.'
+                    bio={userData.user1.bio}
 
                     pfpSrc='./images/Korra.png'
 

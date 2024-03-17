@@ -1,0 +1,22 @@
+{
+    "user1": {
+      "username": "Zen da Baker",
+      "bio": "This is the bio of Zen. This is some text in a paragraph about a user of the dream journal app and is their home for sharing their dreams with their freinds. This is a super great way to do it because if you have a dream and want to share that dream with your friends, you can create a post about it on this app."
+    },
+    "user2": {
+        "username": "Emerald",
+        "bio": "This is Emerald's bio."
+    },
+    "user3": {
+        "username": "Henry",
+        "bio": "This is the bio of Henry."
+    },
+    "user4": {
+        "username": "Maria",
+        "bio": "This is the bio of Maria."
+    },
+    "user5": {
+        "username": "Star",
+        "bio": "This is the bio of Star."
+    }
+}

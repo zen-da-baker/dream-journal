@@ -7,6 +7,9 @@ import style from '../../stylesheets/styles.module.css';
 // Import Child Components
 import FriendCard from './FriendCard';
 
+// Import Database
+import userData from '../../demoUserData/demoUserData.json';
+
 export default function FriendsList() {
     return (
         <div id={style.friendsListComponent} className={style.grid}>
@@ -23,9 +26,9 @@ export default function FriendsList() {
 
                         bannerSrc='./images/placeholder.webp'
                         
-                        friendName='Friend 1'
+                        friendName={userData.user2.username}
 
-                        bioText='This is some text from the first friend on the list.'
+                        bioText={userData.user2.bio}
                     />
 
                     <FriendCard
@@ -35,9 +38,9 @@ export default function FriendsList() {
 
                         bannerSrc='./images/Valorant.jpg'
                         
-                        friendName='Friend 2'
+                        friendName={userData.user3.username}
 
-                        bioText='This is the text of the second friend.'
+                        bioText={userData.user3.bio}
                     />
 
                     <FriendCard 
@@ -47,9 +50,9 @@ export default function FriendsList() {
 
                         bannerSrc='./images/Valorant.jpg'
                         
-                        friendName='Friend 3'
+                        friendName={userData.user4.username}
 
-                        bioText='This is the bio of the third friend.'
+                        bioText={userData.user4.bio}
                     />
 
                     <FriendCard
@@ -59,9 +62,9 @@ export default function FriendsList() {
 
                         bannerSrc='./images/Valorant.jpg'
                         
-                        friendName='Friend 4'
+                        friendName={userData.user5.username}
 
-                        bioText='This is the bio of the fourth friend.'
+                        bioText={userData.user5.bio}
                     />
 
                 </div>
