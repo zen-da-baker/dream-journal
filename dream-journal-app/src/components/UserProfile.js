@@ -28,9 +28,15 @@ export default function UserProfile() {
         setUserInput(event.target.value);
     }
 
-    function handlePost() {
-        return userData.user1.post.writeFile('../demoUserData/demoUserData.json', JSON.stringify(userInput));
+    function handlePost(userInput) {
+        JSON.stringify(userInput)
+
+
+        return alert('Post saved to database!');
     }
+
+    // userData.user1.post.writeFile('../demoUserData/demoUserData.json', JSON.stringify(userInput));
+
 
     return (
         <main>
@@ -54,7 +60,7 @@ export default function UserProfile() {
                 <DreamPost 
                     dateSelected={handleSelection}
 
-                    postDisplay={handlePost}
+                    handlePost={handlePost}
 
                     userInput={userInput}
 
