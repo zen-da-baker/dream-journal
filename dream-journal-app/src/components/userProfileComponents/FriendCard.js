@@ -24,7 +24,7 @@ export default function FriendCard(props) {
             </div>
             
             <div id={style.viewProfile}>
-                <button className={style.btn}>View Profile</button>
+                <button className={style.btn} onClick={props.handleView}>View Profile</button>
             </div>
 
         </div>

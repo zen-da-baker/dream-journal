@@ -26,6 +26,11 @@ function App() {
   // Selected User State
   const [selectedUser, setSelectedUser] = useState(userData.user1);
 
+  // Handle View Profile
+  function handleViewProfile(user) {
+    setSelectedUser(user)
+  }
+
   // Log In Authorization demo
   const password = 'enter';
 
@@ -68,6 +73,10 @@ function App() {
         />
 
         <UserProfile 
+          user={selectedUser}
+
+          handleView={handleViewProfile}
+
           handleFriends={() => {
             setUserProfilePage(false);
             setFriendsListPage(true);

@@ -34,6 +34,8 @@ export default function FriendsList(props) {
                         friendName={userData.user2.username}
 
                         bioText={userData.user2.bio}
+
+                        handleView={props.handleView}
                     />
 
                     <FriendCard

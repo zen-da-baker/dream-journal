@@ -42,19 +42,19 @@ export default function UserProfile(props) {
         <main>
             <div className={style.pageGrid}>
                 <ProfileBanner 
-                    username={userData.user1.username}
+                    username={props.user.username}
 
-                    bio={userData.user1.bio}
+                    bio={props.user.bio}
 
-                    pfpSrc={userData.user1.pfp}
+                    pfpSrc={props.user.pfp}
 
-                    bannerSrc={userData.user1.banner}
+                    bannerSrc={props.user.banner}
                 />
 
                 <MonthDisplay 
                     postDisplay={handlePost}
 
-                    databaseInput={userData.user1.post}
+                    databaseInput={props.user.post}
                 />
 
                 <DreamPost 
@@ -69,6 +69,8 @@ export default function UserProfile(props) {
 
                 <FriendsList 
                     handleFriends={props.handleFriends}
+
+                    handleView={props.handleView}
                 />
             </div>
         </main>
