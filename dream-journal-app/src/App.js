@@ -12,6 +12,9 @@ import Friends from './components/Friends';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+// Import User Data
+import userData from './demoUserData/demoUserData.json';
+
 function App() {
 
   // Page States
@@ -19,6 +22,9 @@ function App() {
   const [userProfilePage, setUserProfilePage] = useState(false);
   const [discoverPage, setDiscoverPage] = useState(false);
   const [friendsListPage, setFriendsListPage] = useState(false);
+
+  // Selected User State
+  const [selectedUser, setSelectedUser] = useState(userData.user1);
 
   // Log In Authorization demo
   const password = 'enter';
