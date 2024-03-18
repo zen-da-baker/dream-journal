@@ -101,9 +101,8 @@ a:hover {
 .pageGrid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, min-height(20rem));
     gap: 1rem;
-    min-height: 90vh;
 }
 @media only screen and (max-width: 480px) {
     .grid {
@@ -278,6 +277,48 @@ a:hover {
     margin: 1rem;
 }
 
+/* Friend Page */
+#friendPageList {
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 5;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#friendPageFriend1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+
+    height: 20rem;
+}
+#friendPageFriend2 {
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 1;
+}
+#friendPageFriend3 {
+    grid-column: 9 / span 4;
+    grid-row: 1 / span 1;
+}
+#friendPageFriend4 {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+}
+
+/* Search Container */
+#searchContainer {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+
+    justify-content: center;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    background-color: hsla(180, 50%, 20%, 1);
+}
+
 /* Vanilla Components
 ============================================ */
 
@@ -388,6 +429,8 @@ a:hover {
     grid-template-rows: repeat(5, 1fr);
 
     gap: 1rem;
+
+    max-height: 20rem;
 }
 
 #friendBanner {
@@ -433,6 +476,11 @@ a:hover {
 #viewProfile {
     grid-column: 1 / span 3;
     grid-row: 5 / span 1
+}
+
+/* Search Component */
+#search {
+    max-width: 20rem;
 }
 
 /* Section Elements
