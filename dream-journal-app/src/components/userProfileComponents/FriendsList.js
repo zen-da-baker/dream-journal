@@ -10,13 +10,18 @@ import FriendCard from './FriendCard';
 // Import Database
 import userData from '../../demoUserData/demoUserData.json';
 
-export default function FriendsList() {
+export default function FriendsList(props) {
     return (
         <div id={style.friendsListComponent} className={style.grid}>
             <div className={style.componentCard}>
                 <div className={style.profileGrid}>
                     <div id={style.friendListHeading}>
-                        <h2>Friend List</h2>
+                        <div className={style.container}>
+                            <h2>Friend List</h2>
+
+                            <button className={style.btn} onClick={props.handleFriends}>Friends</button>
+                        </div>
+                        
                     </div>
 
                     <FriendCard 

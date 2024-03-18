@@ -13,7 +13,7 @@ import FriendsList from './userProfileComponents/FriendsList';
 // Import Database
 import userData from '../demoUserData/demoUserData.json';
 
-export default function UserProfile() {
+export default function UserProfile(props) {
 
     const [selected, setSelected] = useState(false);
 
@@ -67,7 +67,9 @@ export default function UserProfile() {
                     handleUserInput={handleUserInput}
                 />
 
-                <FriendsList />
+                <FriendsList 
+                    handleFriends={props.handleFriends}
+                />
             </div>
         </main>
     )

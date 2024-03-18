@@ -61,7 +61,12 @@ function App() {
           }}
         />
 
-        <UserProfile />
+        <UserProfile 
+          handleFriends={() => {
+            setUserProfilePage(false);
+            setFriendsListPage(true);
+          }}
+        />
 
         <Footer />
       </>
