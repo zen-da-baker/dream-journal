@@ -4,30 +4,35 @@
       "bio": "This is the bio of Zen. This is some text in a paragraph about a user of the dream journal app and is their home for sharing their dreams with their freinds. This is a super great way to do it because if you have a dream and want to share that dream with your friends, you can create a post about it on this app.",
       "pfp": "./images/Korra.png",
       "banner": "./images/Valorant.jpg",
+      "friends": ["user2", "user3", "user4", "user5"],
       "post": ""
     },
     "user2": {
         "username": "Emerald",
         "bio": "This is Emerald's bio.",
         "pfp": "./images/gendrome.png",
-        "banner": "./images/placeholder 1.png"
+        "banner": "./images/placeholder 1.png",
+        "friends": ["user1", "user3", "user4", "user5"]
     },
     "user3": {
         "username": "Henry",
         "bio": "This is the bio of Henry.",
         "pfp": "./images/giadrome.png",
-        "banner": "./images/placeholder 2.png"
+        "banner": "./images/placeholder 2.png",
+        "friends": ["user1", "user2", "user4", "user5"]
     },
     "user4": {
         "username": "Maria",
         "bio": "This is the bio of Maria.",
         "pfp": "./images/greatbaggi.png",
-        "banner": "./images/placeholder 3.png"
+        "banner": "./images/placeholder 3.png",
+        "friends": ["user1", "user2", "user3", "user5"]
     },
     "user5": {
         "username": "Star",
         "bio": "This is the bio of Star.",
         "pfp": "./images/greatizuchi.png",
-        "banner": "./images/placeholder 4.png"
+        "banner": "./images/placeholder 4.png",
+        "friends": ["user1", "user2", "user3", "user4"]
     }
 }
