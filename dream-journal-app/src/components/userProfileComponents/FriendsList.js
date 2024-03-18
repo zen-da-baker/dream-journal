@@ -27,7 +27,7 @@ export default function FriendsList(props) {
                     <FriendCard 
                         friendCardId={style.friend1}
 
-                        pfpSrc={userData.user2.pfp}
+                        pfpSrc={props.user.friends[0].pfp}
 
                         bannerSrc={userData.user2.banner}
                         
@@ -35,7 +35,7 @@ export default function FriendsList(props) {
 
                         bioText={userData.user2.bio}
 
-                        handleView={props.handleView}
+                        handleView={props.handleView(userData.user2)}
                     />
 
                     <FriendCard
@@ -48,6 +48,8 @@ export default function FriendsList(props) {
                         friendName={userData.user3.username}
 
                         bioText={userData.user3.bio}
+
+                        handleView={props.handleView(userData.user3)}
                     />
 
                     <FriendCard 
@@ -60,6 +62,8 @@ export default function FriendsList(props) {
                         friendName={userData.user4.username}
 
                         bioText={userData.user4.bio}
+
+                        handleView={props.handleView(userData.user4)}
                     />
 
                     <FriendCard
@@ -72,6 +76,8 @@ export default function FriendsList(props) {
                         friendName={userData.user5.username}
 
                         bioText={userData.user5.bio}
+
+                        handleView={props.handleView(userData.user5)}
                     />
 
                 </div>
