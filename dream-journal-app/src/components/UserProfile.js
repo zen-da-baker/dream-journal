@@ -29,10 +29,19 @@ export default function UserProfile(props) {
     }
 
     function handlePost(userInput) {
-        JSON.stringify(userInput)
+        let post = userInput;
 
+        return (
+            <p>{post}</p>
+        )
+    }
 
-        return alert('Post saved to database!');
+    function displayPost() {
+        if (userInput) {
+            return (
+                <p>{userInput}</p>
+            )
+        }
     }
 
     // userData.user1.post.writeFile('../demoUserData/demoUserData.json', JSON.stringify(userInput));
@@ -65,6 +74,8 @@ export default function UserProfile(props) {
                     userInput={userInput}
 
                     handleUserInput={handleUserInput}
+
+                    displayPost={displayPost}
                 />
 
                 <FriendsList 

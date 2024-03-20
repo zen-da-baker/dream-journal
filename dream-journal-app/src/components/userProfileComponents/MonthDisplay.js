@@ -11,6 +11,8 @@ export default function MonthDisplay(props) {
                 <h2>Month Component</h2>
 
                 <p>{props.databaseInput}</p>
+
+                <p>{props.postDisplay}</p>
             </div>
         </div>
     )

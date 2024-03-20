@@ -26,7 +26,11 @@ export default function DreamPost(props) {
 
                     <input type='submit' className={style.btn} value='Submit' />
                 </form>
+
+                <p>{props.displayPost}</p>
             </div>
+
+            
         )
     }
 }
