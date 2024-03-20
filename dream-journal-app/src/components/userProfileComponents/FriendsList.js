@@ -11,6 +11,9 @@ import FriendCard from './FriendCard';
 import userData from '../../demoUserData/demoUserData.json';
 
 export default function FriendsList(props) {
+
+    
+
     return (
         <div id={style.friendsListComponent} className={style.grid}>
             <div className={style.componentCard}>
@@ -31,7 +34,7 @@ export default function FriendsList(props) {
 
                         bannerSrc={userData.user2.banner}
                         
-                        friendName={userData.user2.username}
+                        friendName={props.user.friends[0].username}
 
                         bioText={userData.user2.bio}
 

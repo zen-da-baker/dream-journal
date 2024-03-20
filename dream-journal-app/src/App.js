@@ -40,6 +40,8 @@ function App() {
     setUserProfilePage(auth);
   }
 
+  
+
   if (signUpPage === true) {
     return (
       <>
