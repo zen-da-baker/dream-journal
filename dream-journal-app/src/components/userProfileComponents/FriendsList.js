@@ -12,7 +12,7 @@ import userData from '../../demoUserData/demoUserData.json';
 
 export default function FriendsList(props) {
 
-    
+
 
     return (
         <div id={style.friendsListComponent} className={style.grid}>
@@ -34,7 +34,7 @@ export default function FriendsList(props) {
 
                         bannerSrc={userData.user2.banner}
                         
-                        friendName={props.user.friends[0].username}
+                        friendName={props.friends[0]}
 
                         bioText={userData.user2.bio}
 

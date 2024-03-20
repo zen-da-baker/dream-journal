@@ -72,6 +72,8 @@ export default function UserProfile(props) {
 
                     handleView={props.handleView}
 
+                    friends={props.friends}
+
                     user={props.user}
                 />
             </div>

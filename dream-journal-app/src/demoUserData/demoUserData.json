@@ -33,6 +33,6 @@
         "bio": "This is the bio of Star.",
         "pfp": "./images/greatizuchi.png",
         "banner": "./images/placeholder 4.png",
-        "friends": ["this.this.user1", "user2", "user3", "user4"]
+        "friends": ["'user1': {'username': 'this.this.this.user1'}", "user2", "user3", "user4"]
     }
 }

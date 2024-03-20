@@ -79,6 +79,8 @@ function App() {
 
           handleView={handleViewProfile}
 
+          friends={selectedUser.friends}
+
           handleFriends={() => {
             setUserProfilePage(false);
             setFriendsListPage(true);
