@@ -28,7 +28,17 @@ function App() {
 
   // Handle View Profile
   function handleViewProfile(user) {
-    setSelectedUser(user)
+    if (user === 'user2') {
+      setSelectedUser(userData.user2);
+    } else if (user === 'user3') {
+      setSelectedUser(userData.user3);
+    } else if (user === 'user4') {
+      setSelectedUser(userData.user4);
+    } else if (user === 'user5') {
+      setSelectedUser(userData.user5);
+    } else {
+      setSelectedUser(userData.user1);
+    }
   }
 
   // Log In Authorization demo

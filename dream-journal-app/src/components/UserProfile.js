@@ -12,6 +12,7 @@ import FriendsList from './userProfileComponents/FriendsList';
 
 // Import Database
 import userData from '../demoUserData/demoUserData.json';
+import fs from 'node:fs';
 
 export default function UserProfile(props) {
 
@@ -26,6 +27,18 @@ export default function UserProfile(props) {
 
     function handleUserInput(event) {
         setUserInput(event.target.value);
+
+        const fs = require('fs');
+        const fileName = '../demoUserData/demoUserData.json';
+        const file = require(fileName);
+
+        file.key = userInput;
+
+        fs.writeFile(fileName, JSON.stringify(file, null, 2), function writeJSON(err) {
+            if (err) return console.log(err);
+            console.log(JSON.stringify(file));
+            console.log('Writing to ' + fileName);
+        })
     }
 
     function handlePost(userInput) {

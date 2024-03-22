@@ -38,7 +38,7 @@ export default function FriendsList(props) {
 
                         bioText={userData.user2.bio}
 
-                        handleView={props.handleView(userData.user2)}
+                        handleView={props.handleView('user2')}
                     />
 
                     <FriendCard
@@ -52,7 +52,7 @@ export default function FriendsList(props) {
 
                         bioText={userData.user3.bio}
 
-                        handleView={props.handleView(userData.user3)}
+                        handleView={props.handleView('user3')}
                     />
 
                     <FriendCard 
@@ -66,7 +66,7 @@ export default function FriendsList(props) {
 
                         bioText={userData.user4.bio}
 
-                        handleView={props.handleView(userData.user4)}
+                        handleView={props.handleView('user4')}
                     />
 
                     <FriendCard
@@ -80,7 +80,7 @@ export default function FriendsList(props) {
 
                         bioText={userData.user5.bio}
 
-                        handleView={props.handleView(userData.user5)}
+                        handleView={props.handleView('user5')}
                     />
 
                 </div>
