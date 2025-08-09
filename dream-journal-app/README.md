@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Dream Journal - Social Media App - Design Process
+## Purpose
+This is a message board app that allows users to post short stories with a thumbnail image of their most recent dream. The profile of the user sets the dreams in chronological order. The user can view when they posted about a dream in a flat timeline view or in a calendar view using the post creation data as a source for those database displays. 
+## Description
+This is a dream journal application in the form of a social media network aimed at sharing dreams and statistics around dream occurrence with other users. The core of the app is in the sign in, sign up, profile, friend, and discover pages. 
+## Languages
+- HTML
+- CSS
+- JavaScript
+- React.js
+## Skills
+## Build Process
+Page navigation was created first on a whiteboard with the logic drawn. The page navigation uses components the size of the page to control the user view using useState. 
+A true state sets other states to false and the page displayed is based on that state. All states being false display a default Sign In page.
+*The header and footer are components that display in the profile, discover, and friends pages. They do not display in the log in and sign up pages.*
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I created a form on the Sign In page with a password form that successfully enters the User Profile page when the correct password is entered. 
+*This is to be located in an account database but for a simple demo a sample password was used.*
 
-## Available Scripts
+Following the Sign In page password creation, I also made the page navigation buttons in the header component that successfully navigate between the pages using useState and props passed from the parent component to the child page components.
 
-In the project directory, you can run:
+I created the User Profile page to use CSS Grid for laying out the core Profile Banner, Calendar Display, Dream Post, and Friends List child components within their own folders and styled with a module CSS file. 
 
-### `npm start`
+Following the use of CSS Grid for laying out the page, I also used it to layout each component such as the Profile Banner and Friend List and passed placeholder data as props to be displayed in those 3rd level child components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Creating a basic footer was next and I used a simple CSS Grid to structure the basic footer and used Flexbox to arrange buttons in place of links. Finally, I used the same text field component styling for a newsletter input and a primary colored submit button to go with it.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Next off was to make a textarea for the dream post input as a placeholder component before allowing the input or display of the dream post to be determined by state. 
