@@ -1,2 +1,8 @@
 # Dream Journal
 The dream journal is a primaryily client side browser based where the user can record their dreams and read them in a calendar or a list based on the date the dream took place. The date is recorded automatically or can be manually selected. 
+## Technologies
+The app is built in React 
+- TypeScript
+- CSS
+- TSX
+- HTML
