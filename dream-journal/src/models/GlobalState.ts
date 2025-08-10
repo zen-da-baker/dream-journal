@@ -1,22 +1,9 @@
-// Import data models
-import { IngredientModel } from "./IngredientModel";
-import { RecipeModel } from "./RecipeModel";
-import { PremiumFeaturesModel } from "./PremiumFeaturesModel";
+
 
 // Global State class used to create the global state object used throughout the entire app
 export class GlobalState {
 
     username: string = "";
-
-    tutorialCompleted: boolean = false;
-
-    ingredientList: Array<IngredientModel> = [];
-
-    groceryList: Array<string> = [];
-
-    plannedMeals: Array<RecipeModel> = [];
-
-    allPremiumFeatures: Array<PremiumFeaturesModel> = [];
 
     currentPage: string = "tutorial start";
 
@@ -26,31 +13,11 @@ export class GlobalState {
 
             username: "",
 
-            tutorialCompleted: false,
-
-            ingredientList: [],
-
-            groceryList: [],
-
-            plannedMeals: [],
-
-            allPremiumFeatures: [],
-
             currentPage: "tutorial start"
 
         }) {
 
                 this.username = prevState.username;
-
-                this.tutorialCompleted = prevState.tutorialCompleted;
-
-                this.ingredientList = prevState.ingredientList;
-
-                this.groceryList = prevState.groceryList;
-
-                this.plannedMeals = prevState.plannedMeals;
-
-                this.allPremiumFeatures = prevState.allPremiumFeatures;
 
                 this.currentPage = prevState.currentPage;
 
@@ -78,17 +45,7 @@ export class GlobalState {
 
             this.username = prevState.username;
 
-            this.tutorialCompleted = prevState.tutorialCompleted;
-
-            this.ingredientList = prevState.ingredientList;
-
-            this.groceryList = prevState.groceryList;
-
-            this.plannedMeals = prevState.plannedMeals;
-
             this.currentPage = prevState.currentPage;
-
-            this.allPremiumFeatures = prevState.allPremiumFeatures;
 
             console.log("Data loaded")
 

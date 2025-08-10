@@ -1,44 +1,26 @@
-import { useState } from "react";
+// import css
+import "./styles/global.css";
+import "./styles/buttons.css";
+import "./styles/typography.css";
 
-import logo from './logo.svg';
- 
-import './App.css';
+// import view of the user screen as a single component
+import { View } from './View';
 
-import { AllDreamsPage } from './pages/AllDreamsPage';
-import { CalendarPage } from "./pages/CalendarPage";
-import { SettingsPage } from "./pages/SettingsPage";
+// import global state context to be used across the entire application
+import { GlobalStateContext } from './state/GlobalStateContext';
 
 function App() {
 
-  const [currentPage, setCurrentPage] = useState<string>("calendar page");
-
-  switch (currentPage) {
-
-    case "calendar page":
-      return <CalendarPage />
-
-  }
-   
+  // Return the application view wrapped in the global state context
   return (
+    <GlobalStateContext>
+      
+      <View />
 
-    <div className="App">
-
-      <header className="App-header">
-
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <p>Edit <code>src/App.tsx</code> and save to reload.</p>
-        
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-
-      </header>
-
-    </div>
-
-  );
-
+    </GlobalStateContext>
+  )
+          
 }
 
+// Export the app to the index file and the HTML page
 export default App;

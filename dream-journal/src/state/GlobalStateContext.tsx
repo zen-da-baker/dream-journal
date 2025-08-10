@@ -3,7 +3,7 @@ import React, { useState, useContext } from 'react';
 
 // Import current transactions
 
-import { GlobalState } from "../models/GlobalStateModel";
+import { GlobalState } from "../models/GlobalState";
 
 // Create context for total state
 const stateExample = new GlobalState();
