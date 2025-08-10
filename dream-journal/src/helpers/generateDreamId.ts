@@ -1,3 +1,5 @@
-export function generateDreamId() {
+export function generateDreamId(): number {
+
+    return 0;
     
 }

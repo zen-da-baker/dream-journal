@@ -1,4 +1,6 @@
-import { loadDreamsList } from "../helpers/loadDreamsList"
+import { DreamsList } from "../components/DreamsList";
+
+import { NewDream } from "../components/NewDream";
 
 export function AllDreamsPage() {
     
@@ -7,7 +9,9 @@ export function AllDreamsPage() {
 
             <h1>All Dreams</h1>
 
-            <button>New Dream</button>
+            <NewDream />
+
+            <DreamsList />
 
         </main>
     )
