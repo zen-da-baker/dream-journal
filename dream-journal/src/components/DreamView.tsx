@@ -63,8 +63,10 @@ export function DreamView({ dream } : { dream: DreamModel }) {
 
     function handleSaveDream() {
 
+        // Check if the edit fields are empty and apply changes if not empty
         if (title.length !== 0 && body.length !== 0 && date.length !== 0) {
 
+            // Assign the fields of the dream
             dream.title = title;
 
             dream.body = body;
