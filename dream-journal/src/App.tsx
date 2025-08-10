@@ -1,8 +1,23 @@
+import { useState } from "react";
+
 import logo from './logo.svg';
  
 import './App.css';
 
+import { AllDreamsPage } from './pages/AllDreamsPage';
+import { CalendarPage } from "./pages/CalendarPage";
+import { SettingsPage } from "./pages/SettingsPage";
+
 function App() {
+
+  const [currentPage, setCurrentPage] = useState<string>("calendar page");
+
+  switch (currentPage) {
+
+    case "calendar page":
+      return <CalendarPage />
+
+  }
    
   return (
 
