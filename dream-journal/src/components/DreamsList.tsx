@@ -11,8 +11,10 @@ import { DreamSummaryCard } from "./DreamSummaryCard";
 
 export function DreamsList() {
 
+    // Extract the dreams from the local storage
     const allDreams: Array<DreamModel> = loadDreamsList();
 
+    // Arrange the dreams in a gallery of summary card components
     const dreamsGalleryList = allDreams.map((dreamFile: DreamModel) => {
 
         return <DreamSummaryCard dream={ dreamFile } />

@@ -61,6 +61,14 @@ export function NewDream() {
 
     function handleDateEdit(event: any) {
 
+        console.log(event.target.value)
+
+        const date = new Date(event.target.value);
+
+        console.log(date)
+
+        const newDateString = date.toISOString();
+
         setDate(event.target.value);
 
     }

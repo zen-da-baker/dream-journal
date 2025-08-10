@@ -21,7 +21,7 @@ export function displayDate(dateString: string): string {
 
     const date = new Date(dateString);
 
-    const dayNumber: number = date.getDay();
+    const dayNumber: number = date.getDate();
 
     const monthNumber: number = date.getMonth();
 
