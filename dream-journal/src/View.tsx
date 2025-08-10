@@ -1,5 +1,5 @@
 // Import global state and updating the global state
-import { GlobalState } from "./models/GlobalState";
+import { GlobalStateModel } from "./models/GlobalStateModel";
 import { useGlobalState } from "./state/GlobalStateContext";
 
 // Standard pages
@@ -14,7 +14,7 @@ import { UnknownPage } from "./pages/UnknownPage";
 export function View() {
 
     // Import the global state variable
-    const globalState: GlobalState = useGlobalState();
+    const globalState: GlobalStateModel = useGlobalState();
 
     // Parse the current page from the global state
     const currentPage: string = globalState.currentPage;

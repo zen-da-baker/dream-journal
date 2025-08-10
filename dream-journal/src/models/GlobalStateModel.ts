@@ -1,7 +1,7 @@
 
 
 // Global State class used to create the global state object used throughout the entire app
-export class GlobalState {
+export class GlobalStateModel {
 
     username: string = "";
 
@@ -33,7 +33,7 @@ export class GlobalState {
 
     }
 
-    load(): GlobalState {
+    load(): GlobalStateModel {
 
         const jsonData: string | null = localStorage.getItem("dreamJournalSaveState");
 

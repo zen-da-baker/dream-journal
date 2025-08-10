@@ -3,10 +3,10 @@ import React, { useState, useContext } from 'react';
 
 // Import current transactions
 
-import { GlobalState } from "../models/GlobalState";
+import { GlobalStateModel } from "../models/GlobalStateModel";
 
 // Create context for total state
-const stateExample = new GlobalState();
+const stateExample = new GlobalStateModel();
 
 const StateContext = React.createContext(stateExample);
 
@@ -21,9 +21,9 @@ export function useSetGlobalState() {
     return useContext(UpdateStateContext);
 }
 
-function checkForData(): GlobalState {
+function checkForData(): GlobalStateModel {
 
-    const initialState: GlobalState = new GlobalState();
+    const initialState: GlobalStateModel = new GlobalStateModel();
 
     const loadedState = initialState.load();
 
@@ -34,7 +34,7 @@ function checkForData(): GlobalState {
 // Create the main state provider for the parent level App component so all other components can access the state in this file
 export function GlobalStateContext({ children } : any) {    
 
-    const [globalState, setGlobalState] = useState<GlobalState>(checkForData());
+    const [globalState, setGlobalState] = useState<GlobalStateModel>(checkForData());
     
     // Nested context for the main App component
     return (

@@ -1,4 +1,4 @@
-
+// Import styles 
 
 // import view of the user screen as a single component
 import { View } from './View';

@@ -5,7 +5,7 @@
     This data model is expected to be parsed from JSON directly so it will have no methods. 
     Any functionality related to the dream model will be handled by the components in React.
 */
-export class Dream {
+export class DreamModel {
 
     id: number;
 
