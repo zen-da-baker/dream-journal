@@ -1,6 +1,9 @@
 /*
     The dream is the core data model of the app. It expect the app to generate an ID for searching. 
     The user inputs such as the date, the title, and body are optional.
+
+    This data model is expected to be parsed from JSON directly so it will have no methods. 
+    Any functionality related to the dream model will be handled by the components in React.
 */
 export class Dream {
 
