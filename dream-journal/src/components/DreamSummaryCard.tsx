@@ -1,10 +1,15 @@
 // Import data models
 import { DreamModel } from "../models/DreamModel";
 
+// Helper functions
 import { displayDate } from "../helpers/displayDate";
+
+// Import components
+import { DreamView } from "./DreamView";
 
 export function DreamSummaryCard({ dream }: { dream: DreamModel }) {
 
+    // Format the date string 
     const dateText = displayDate(dream.date);
 
     return (
@@ -14,7 +19,7 @@ export function DreamSummaryCard({ dream }: { dream: DreamModel }) {
 
             <p>{ dateText }</p>
 
-            <button>View Dream</button>
+            <DreamView dream={ dream } />
 
         </div>
     )

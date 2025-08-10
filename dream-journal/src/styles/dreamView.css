@@ -1,0 +1,17 @@
+.dream-view {
+
+    position: fixed;
+    
+    border: 0.1rem solid black;
+
+    z-index: 1;
+
+    background-color: hsl(1, 0%, 80%);
+
+    top: 10vh;
+
+    width: 80vw;
+
+    height: 50vh;
+
+}

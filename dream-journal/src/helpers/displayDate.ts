@@ -4,6 +4,7 @@
 */
 export function displayDate(dateString: string): string {
 
+    // A list of months strings
     const monthsList: Array<string> = [
         "January",
         "February",
@@ -19,7 +20,22 @@ export function displayDate(dateString: string): string {
         "December"
     ]
 
+    // List of days strings
+    const dayList: Array<string> = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ]
+
+    // Create a date object based on the string for parsing 
     const date = new Date(dateString);
+
+    // Extract number details from the date object
+    const dayOfTheWeekNumber: number = date.getDay();
 
     const dayNumber: number = date.getDate();
 
@@ -27,8 +43,12 @@ export function displayDate(dateString: string): string {
 
     const yearNumber: number = date.getFullYear();
 
+    // Select the day of the week and months from the list based on the number
+    const dayOfTheWeekString = dayList[dayOfTheWeekNumber];
+
     const monthString = monthsList[monthNumber];
 
-    return `Dreamed on ${ monthString } ${ dayNumber }, ${ yearNumber }.`;
+    // Return a custom string with interporlation
+    return `Dreamed on ${ dayOfTheWeekString } ${ monthString } ${ dayNumber }, ${ yearNumber }.`;
 
 }
