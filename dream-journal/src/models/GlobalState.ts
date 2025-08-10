@@ -5,7 +5,7 @@ export class GlobalState {
 
     username: string = "";
 
-    currentPage: string = "calendar";
+    currentPage: string = "all dreams";
 
     constructor(
 
@@ -13,7 +13,7 @@ export class GlobalState {
 
             username: "",
 
-            currentPage: "calendar"
+            currentPage: "all dreams"
 
         }) {
 
