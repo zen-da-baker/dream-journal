@@ -13,8 +13,14 @@ import "../styles/dreamView.css";
 */
 export function DreamView({ dream } : { dream: DreamModel }) {
 
+    // Local state toggles
     const [expandedView, setExpandedView] = useState<boolean>(false);
     const [editState, setEditState] = useState<boolean>(false);
+
+    // Local state edits to the dream object
+    const [title, setTitle] = useState<string>(dream.title);
+    const [body, setBody] = useState<string>(dream.body);
+    const [date, setDate] = useState<string>(dream.date);
 
     // Toggle the expanded view of the dream
     function toggleExpandedView() {
@@ -37,6 +43,38 @@ export function DreamView({ dream } : { dream: DreamModel }) {
 
     }
 
+    function handleTitleEdit(event: any) {
+
+        setTitle(event.target.value);
+
+    }
+
+    function handleBodyEdit(event: any) {
+
+        setBody(event.target.value);
+
+    }
+
+    function handleDateEdit(event: any) {
+
+        setDate(event.target.value);
+
+    }
+
+    function handleSaveDream() {
+
+        if (title.length !== 0 && body.length !== 0 && date.length !== 0) {
+
+            dream.title = title;
+
+            dream.body = body;
+
+            dream.date = date;
+
+        }
+
+    }
+
     if (expandedView) {
 
         if (editState) {
@@ -48,11 +86,13 @@ export function DreamView({ dream } : { dream: DreamModel }) {
 
                     <button onClick={ toggleEditState }>Cancel</button>
 
-                    <input type="text" />
+                    <input type="text" value={ title } onChange={ handleTitleEdit } />
 
-                    <textarea>
+                    <textarea value={ body } onChange={ handleBodyEdit }>
 
                     </textarea>
+
+                    <input type="datetime-local" value={ date } onChange={ handleDateEdit } />
 
                 </div>
             )
