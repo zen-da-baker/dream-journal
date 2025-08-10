@@ -1,8 +1,13 @@
+import "../styles/dreamCard.css";
+
 // Data models
 import { DreamModel } from "../models/DreamModel";
 
 // Helper functions
 import { loadDreamsList } from "../helpers/loadDreamsList";
+
+// Import components
+import { DreamSummaryCard } from "./DreamSummaryCard";
 
 export function DreamsList() {
 
@@ -10,13 +15,7 @@ export function DreamsList() {
 
     const dreamsGalleryList = allDreams.map((dreamFile: DreamModel) => {
 
-        return (
-            <div>
-                <h3>{ dreamFile.title }</h3>
-
-                <p>{ dreamFile.date }</p>
-            </div>
-        )
+        return <DreamSummaryCard dream={ dreamFile } />
 
     })
 

@@ -3,7 +3,7 @@ import { DreamsListModel } from "../models/DreamsListModel";
 
 export function loadDreamsList(): Array<DreamModel> {
 
-    const dreamsListJson: string | null = localStorage.getItem("dreamJournalDreams");
+    const dreamsListJson: string | null = localStorage.getItem("dreamJournalDreamsList");
 
     if (dreamsListJson !== null) {
 
