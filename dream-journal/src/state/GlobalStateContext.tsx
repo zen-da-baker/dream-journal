@@ -32,25 +32,7 @@ function checkForData(): GlobalState {
 }
 
 // Create the main state provider for the parent level App component so all other components can access the state in this file
-export function GlobalStateContext({ children } : any) {
-
-    // Initialize the loaded state variable
-    /*
-    let loadState: GlobalState = new GlobalState();
-
-    useEffect(() => {
-
-        const newLoadState = loadState.load();
-
-        console.log(loadState);
-
-        console.log(newLoadState);
-
-        console.log("state loaded from context");
-
-    }, [])
-    */
-    
+export function GlobalStateContext({ children } : any) {    
 
     const [globalState, setGlobalState] = useState<GlobalState>(checkForData());
     

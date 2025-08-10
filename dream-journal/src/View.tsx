@@ -25,10 +25,10 @@ export function View() {
         /*
             Standard pages
         */
-        case "calendar page": 
+        case "calendar": 
             return <CalendarPage />
 
-        case "all dreams page":
+        case "all dreams":
             return <AllDreamsPage />
         
         case "settings":

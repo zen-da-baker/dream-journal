@@ -5,7 +5,7 @@ export class GlobalState {
 
     username: string = "";
 
-    currentPage: string = "tutorial start";
+    currentPage: string = "calendar";
 
     constructor(
 
@@ -13,7 +13,7 @@ export class GlobalState {
 
             username: "",
 
-            currentPage: "tutorial start"
+            currentPage: "calendar"
 
         }) {
 
@@ -27,7 +27,7 @@ export class GlobalState {
 
         const jsonData: string = JSON.stringify(this);
 
-        localStorage.setItem("saveState", jsonData);
+        localStorage.setItem("dreamJournalSaveState", jsonData);
 
         console.log("Data saved")
 
@@ -35,7 +35,7 @@ export class GlobalState {
 
     load(): GlobalState {
 
-        const jsonData: string | null = localStorage.getItem("saveState");
+        const jsonData: string | null = localStorage.getItem("dreamJournalSaveState");
 
         console.log(jsonData);
 
