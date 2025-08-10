@@ -4,6 +4,9 @@ import { useState } from "react";
 // Import data models
 import { DreamModel } from "../models/DreamModel";
 
+// Import helper functions
+import { saveDream } from "../helpers/saveDream";
+
 // Import styling
 import "../styles/dreamView.css";
 
@@ -73,7 +76,11 @@ export function DreamView({ dream } : { dream: DreamModel }) {
 
             dream.date = date;
 
+            saveDream(dream);
+
         }
+
+        toggleEditState();
 
     }
 
@@ -84,13 +91,13 @@ export function DreamView({ dream } : { dream: DreamModel }) {
             return (
                 <div className="dream-view">
 
-                    <button>Save</button>
+                    <button onClick={ handleSaveDream }>Save</button>
 
                     <button onClick={ toggleEditState }>Cancel</button>
 
                     <input type="text" value={ title } onChange={ handleTitleEdit } />
 
-                    <textarea value={ body } onChange={ handleBodyEdit }>
+                    <textarea rows={ 20 } cols={ 40 } value={ body } onChange={ handleBodyEdit }>
 
                     </textarea>
 
