@@ -68,7 +68,7 @@ export function NewDream() {
     if (editState) {
 
         return (
-            <div>
+            <div className="dream-view">
 
                 <input type="text" placeholder="Title..." value={ title } onChange={ handleTitleEdit } />
 

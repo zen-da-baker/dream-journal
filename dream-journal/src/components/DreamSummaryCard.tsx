@@ -15,7 +15,7 @@ export function DreamSummaryCard({ dream }: { dream: DreamModel }) {
     return (
         <div className="dream-card" key={ dream.id }>
 
-            <h3>{ dream.title }</h3>
+            <h3 className="title">{ dream.title }</h3>
 
             <p>{ dateText }</p>
 

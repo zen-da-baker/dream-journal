@@ -1,4 +1,6 @@
 // Import styles 
+import "./styles/global.css";
+import "./styles/title.css";
 
 // import view of the user screen as a single component
 import { View } from './View';

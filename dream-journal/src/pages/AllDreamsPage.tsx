@@ -7,7 +7,7 @@ export function AllDreamsPage() {
     return (
         <main>
 
-            <h1>All Dreams</h1>
+            <h1 className="title">All Dreams</h1>
 
             <NewDream />
 

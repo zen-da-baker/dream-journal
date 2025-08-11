@@ -80,6 +80,7 @@ export function DreamView({ dream } : { dream: DreamModel }) {
 
         }
 
+        // Toggle the edit state
         toggleEditState();
 
     }
@@ -95,7 +96,7 @@ export function DreamView({ dream } : { dream: DreamModel }) {
 
                     <button onClick={ toggleEditState }>Cancel</button>
 
-                    <input type="text" value={ title } onChange={ handleTitleEdit } />
+                    <input className="title" type="text" value={ title } onChange={ handleTitleEdit } />
 
                     <textarea rows={ 20 } cols={ 40 } value={ body } onChange={ handleBodyEdit }>
 
@@ -115,7 +116,7 @@ export function DreamView({ dream } : { dream: DreamModel }) {
 
                     <button onClick={ toggleEditState }>Edit</button>
 
-                    <h2>{ dream.title }</h2>
+                    <h2 className="title">{ dream.title }</h2>
 
                     <p>{ dream.body }</p>
 
