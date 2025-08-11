@@ -4,8 +4,4 @@ export class DreamsListModel {
 
     allDreams: Array<DreamModel> = [];
 
-    constructor() {
-
-    }
-
 }

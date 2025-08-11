@@ -9,6 +9,7 @@ import { saveDream } from "../helpers/saveDream";
 
 // Import styling
 import "../styles/dreamView.css";
+import "../styles/text-input.css";
 
 /*
     The dream view component takes in a dream of the dream model type and displays
@@ -92,13 +93,17 @@ export function DreamView({ dream } : { dream: DreamModel }) {
             return (
                 <div className="dream-view">
 
-                    <button onClick={ handleSaveDream }>Save</button>
+                    <div>
 
-                    <button onClick={ toggleEditState }>Cancel</button>
+                        <button className="btn" onClick={ handleSaveDream }>Save</button>
 
-                    <input className="title" type="text" value={ title } onChange={ handleTitleEdit } />
+                        <button className="btn" onClick={ toggleEditState }>Cancel</button>
 
-                    <textarea rows={ 20 } cols={ 40 } value={ body } onChange={ handleBodyEdit }>
+                    </div>
+
+                    <input className="title text-input title-input" type="text" value={ title } onChange={ handleTitleEdit } />
+
+                    <textarea className="text-input body-input" rows={ 20 } cols={ 40 } value={ body } onChange={ handleBodyEdit }>
 
                     </textarea>
 
@@ -112,10 +117,14 @@ export function DreamView({ dream } : { dream: DreamModel }) {
             return (
                 <div className="dream-view">
 
-                    <button onClick={ toggleExpandedView }>Close</button>
+                    <div>
 
-                    <button onClick={ toggleEditState }>Edit</button>
+                        <button className="btn" onClick={ toggleExpandedView }>Close</button>
 
+                        <button className="btn" onClick={ toggleEditState }>Edit</button>
+                    
+                    </div>
+                    
                     <h2 className="title">{ dream.title }</h2>
 
                     <p>{ dream.body }</p>
@@ -127,7 +136,7 @@ export function DreamView({ dream } : { dream: DreamModel }) {
 
     } else {
         return (
-            <button onClick={ toggleExpandedView }>View</button>
+            <button className="btn" onClick={ toggleExpandedView }>View</button>
         )
     }
 }

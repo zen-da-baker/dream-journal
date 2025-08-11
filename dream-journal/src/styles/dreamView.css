@@ -6,14 +6,19 @@
 
     z-index: 1;
 
-    background-color: hsl(1, 0%, 80%);
+    background-color: hsl(190, 20%, 90%);
 
-    top: 10vh;
+    top: 0;
+    left: 0;
 
-    width: 80vw;
+    width: 100vw;
 
-    height: 50vh;
+    height: 100vh;
 
     border-radius: 0.25rem;
+
+    display: flex;
+
+    flex-direction: column;
 
 }

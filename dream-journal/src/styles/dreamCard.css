@@ -2,12 +2,10 @@
     
     border: 0.1rem solid black;
 
-    padding: 1rem;
-
-    margin: 1rem;
-
-    width: 70vw;
+    width: 20rem;
 
     border-radius: 0.5rem;
+
+    background-color: hsl(190, 50%, 90%);
 
 }

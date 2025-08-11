@@ -22,8 +22,10 @@ export function DreamsList() {
     })
 
     return (
-        <div>
+        <div className="gallery">
+
             { dreamsGalleryList }
+
         </div>
     )
 }

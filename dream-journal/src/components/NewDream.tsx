@@ -7,6 +7,9 @@ import { DreamModel } from "../models/DreamModel";
 // Import helper functions
 import { addNewDream } from "../helpers/addNewDream";
 
+// import styles
+import "../styles/text-input.css";
+
 export function NewDream() {
 
     // Edit state of this component
@@ -70,17 +73,21 @@ export function NewDream() {
         return (
             <div className="dream-view">
 
-                <input type="text" placeholder="Title..." value={ title } onChange={ handleTitleEdit } />
+                <div>
 
-                <textarea placeholder="Dream details..." value={ body } onChange={ handleBodyEdit } >
+                    <button className="btn" onClick={ switchEditState }>Cancel</button>
+
+                    <button className="btn" onClick={ handleSave }>Save</button>
+                
+                </div>
+
+                <input className="text-input title-input" type="text" placeholder="Title..." value={ title } onChange={ handleTitleEdit } />
+
+                <textarea className="text-input body-input" placeholder="Dream details..." rows={ 20 } cols={ 40 } value={ body } onChange={ handleBodyEdit } >
 
                 </textarea>
 
                 <input type="datetime-local" value={ date } onChange={ handleDateEdit } />
-
-                <button onClick={ switchEditState }>Cancel</button>
-
-                <button onClick={ handleSave }>Save</button>
 
             </div>
         )
@@ -88,7 +95,7 @@ export function NewDream() {
     } else {
 
         return (
-            <button onClick={ switchEditState }>New Dream</button>
+            <button id="new-dream-btn" className="btn" onClick={ switchEditState }>New Dream</button>
         )
 
     }
