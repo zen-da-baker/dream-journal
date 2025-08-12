@@ -18,6 +18,10 @@ export class DreamModel {
 
     body: string;
 
+    tags?: Array<string> = [];
+
+    happyDream?: boolean = true;
+
     constructor(
 
         // The title and body are expected to be entered by the user by there are default values in case either are not edited
