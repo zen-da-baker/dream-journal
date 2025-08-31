@@ -1,0 +1,4 @@
+FROM node:alpine
+RUN npm i
+RUN npm i -g serve
+CMD ["serve", "-s", "build", "-l", "3001"]
