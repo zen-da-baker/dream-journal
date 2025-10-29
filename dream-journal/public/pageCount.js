@@ -9,3 +9,5 @@ async function viewCounter() {
     console.log( jsonResult.msg );
 
 }
+
+viewCounter();
