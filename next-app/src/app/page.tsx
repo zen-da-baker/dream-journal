@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { LandingHeader } from "@/components/LandingHeader";
+import { LandingHeader } from "@/components/landing-components/LandingHeader";
 
 export default function Home() {
   return (
