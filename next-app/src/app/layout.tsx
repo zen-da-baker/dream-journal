@@ -14,6 +14,8 @@ import "../styles/flex.css";
 import "../styles/header.css";
 import "../styles/button.css";
 import "../styles/card.css";
+import "../styles/footer.css";
+import "../styles/main.css";
 
 // Export root layout
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

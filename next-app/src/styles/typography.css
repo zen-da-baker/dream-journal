@@ -9,3 +9,15 @@
     text-align: center;
     
 }
+
+p {
+
+    max-width: 40rem;
+
+}
+
+nav * {
+
+    list-style: none;
+
+}
