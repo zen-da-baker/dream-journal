@@ -13,6 +13,7 @@ import "../styles/typography.css";
 import "../styles/flex.css";
 import "../styles/header.css";
 import "../styles/button.css";
+import "../styles/card.css";
 
 // Export root layout
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
