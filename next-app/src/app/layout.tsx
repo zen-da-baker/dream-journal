@@ -9,8 +9,10 @@ export const metadata: Metadata = {
 
 // Import styles
 import "../styles/global.css";
+import "../styles/typography.css";
 import "../styles/flex.css";
 import "../styles/header.css";
+import "../styles/button.css";
 
 // Export root layout
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

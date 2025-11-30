@@ -1,0 +1,25 @@
+button {
+
+    padding: 0.5rem;
+
+    border: 0.1rem solid black;
+
+    border-radius: 0.5rem;
+
+    background-color: hsl(45, 50%, 90%);
+
+    color: hsl(200, 50%, 20%);
+
+    cursor: pointer;
+
+    box-shadow: 0.25rem 0.25rem black;
+
+}
+
+button:active {
+
+    transform: translate( 0.25rem, 0.25rem );
+
+    box-shadow: none;
+
+}

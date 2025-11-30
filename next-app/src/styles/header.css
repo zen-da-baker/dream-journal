@@ -1,5 +1,15 @@
 header {
 
     background-color: hsl(200, 80%, 20%);
-    
+
+    padding: 1rem;
+
+}
+
+header h2 {
+
+    color: white;
+
+    text-decoration: underline;
+
 }
